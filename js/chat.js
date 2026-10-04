@@ -7378,8 +7378,8 @@ if (t && typeof t.blur === 'function') { try { t.blur(); } catch (err) {} }
 }, true);
 }
 const POKE_PRESETS = {
-ta: ['拍了拍我', '戳了戳我的脸蛋', '弹了一下我的额头', '揉了揉我的头发', '捏了捏我的脸颊', '拍了拍我的肩膀'],
-mine: ['拍了拍你', '戳了戳你的脸蛋', '弹了一下你的额头', '揉了揉你的头发', '捏了捏你的脸颊', '拍了拍你的肩膀']
+ta: ['拍了拍我'],
+mine: ['拍了拍你']
 };
 function pokeUserGroupsKey(kind) { return window.activePrefix() + ':poke-groups-' + kind; }
 function pokeUserGroupsLoad(kind) {
