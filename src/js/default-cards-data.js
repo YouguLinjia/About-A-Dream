@@ -233,25 +233,7 @@ window.DEFAULT_CARD_DATA.dict = [
 ];
 
 // ===== 批量补卡新增组（甜蜜日常 + 梦角世界观向）=====
-window.DEFAULT_CARD_DATA.main.push(["控制不住的时候",["刚才那张卡不是我选的"]]);
-window.DEFAULT_CARD_DATA.main.push(["下次一起做",["下次一起做什么？"]]);
-window.DEFAULT_CARD_DATA.main.push(["你生病了",["睡吧，休息得好病才好得快"]]);
-window.DEFAULT_CARD_DATA.main.push(["换季了",["换季了，该整理衣柜了"]]);
-window.DEFAULT_CARD_DATA.main.push(["怎么叫你",["无论称呼怎么变，我叫的人只有你"]]);
-window.DEFAULT_CARD_DATA.main.push(["不同步的时刻",["有时候我不在，是因为工作真的很忙"]]);
-window.DEFAULT_CARD_DATA.main.push(["被你照顾",["我喜欢被你照顾的感觉"]]);
-
 // ===== 批量补卡第二批（日常场景 9 组，纯过日子向）=====
-window.DEFAULT_CARD_DATA.main.push(["生日",["生日快乐，希望之后的每个生日我都陪着你"]]);
-window.DEFAULT_CARD_DATA.main.push(["下雨了",["下雨了，衣服都收进屋子了吗？"]]);
-window.DEFAULT_CARD_DATA.main.push(["睡不着",["把大脑放空，什么都别想了，快睡吧"]]);
-window.DEFAULT_CARD_DATA.main.push(["洗完澡",["把头发擦干再躺下吧"]]);
-window.DEFAULT_CARD_DATA.main.push(["普通节日",["普通的节日也值得庆祝"]]);
-window.DEFAULT_CARD_DATA.main.push(["嘴馋了",["偶尔放纵一下也很好"]]);
-window.DEFAULT_CARD_DATA.main.push(["加班晚归",["工作辛苦啦，洗个澡放松一下吧"]]);
-window.DEFAULT_CARD_DATA.main.push(["出太阳了",["出太阳了，有什么要晒的东西吗？"]]);
-window.DEFAULT_CARD_DATA.main.push(["闻到想到你",["风里有花的香味，闻到就想起了你"]]);
-
 // ===== #1422：互动「必答句」迁入系统预设（2026-09-29 作者「把没在库里的 6 个预设池加进系统预设页」）=====
 // 这六组原先写死在 chat.js（INVITE_DECLINE／CUDDLE_DECLINE／CUDDLE_REPLIES／MY_INVITE_PRESETS）与
 // feed.js（TA_COMMENT_POOL／TA_REPLY_POOL）里：字卡库没有对应页面，而旧的跨分类搜索钩子登记过它们，

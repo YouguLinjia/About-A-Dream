@@ -80,7 +80,7 @@ ok(pick({ 'mjf-en': 1, 'mjf-prob': 0 }) === null, 'B2 mjf-prob=0 → 不触发')
 ok(pick(null) === null, 'B3 cfg 缺失 → 不触发');
 // #329 三种造句手法确定性断言（直接调 dreamFreeRebuild(s, mode, material)）
 const rbM = w.dreamFreeRebuild;
-const FILL = /(想你|抱抱|亲亲|嘿嘿|哦|呀|啦|嘛|呢|哼|想你了|最喜欢你|晚安|早安|嘿嘿嘿|哼哼|呜呜|嘻嘻|好耶|喵)/;
+const FILL = /(想你|抱抱|亲亲|哦|啦|嘛|呢|哼|想你了|最喜欢你|晚安|早安|好耶|喵)/;
 const SRCC = '今天也要好好爱自己';
 let cfOk = 0, cfCards = 0;
 for (let i = 0; i < 30; i++) {
