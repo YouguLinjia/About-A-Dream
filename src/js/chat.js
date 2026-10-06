@@ -9046,9 +9046,9 @@ window.__asCatchupProbe = { fire: asForegroundCatchup, state: function () { retu
 //   逐句开关（dc-off-interact:<文案>）与整组停用都生效；下面三个数组只留作**数据缺失时的兜底**
 //   （同 v3.14.x 经期关心的做法，勿当数据源改）。取用一律走 presetReplyPick(分组名, 兜底)——
 //   ⚠ 必须在调用时取：本文件先于 default-cards.js 加载，模块初始化时窗口出口还不存在。
-const INVITE_DECLINE = ['下次吧，现在不太想玩~', '等会儿再陪你玩好不好', '先不玩啦，待会儿再说', '现在没状态，下次一定'];
-const CUDDLE_DECLINE = ['下次再贴吧，先记着这笔~', '等会儿补给你，说话算数', '先欠着，攒到晚上一起还~', '今天想先自己待会儿，明天加倍还你'];
-const CUDDLE_REPLIES = ['嗯……蹭到了。暖暖的，很喜欢。', '那我要贴很久哦，不许偷偷跑掉。', '手被握住了，就这样待一会儿。', '感觉到了，你在旁边。很安心。', '贴贴充电中……好，满格了。'];
+const INVITE_DECLINE = ['下次吧，现在不太想玩', '等会儿再陪你玩好不好'];
+const CUDDLE_DECLINE = ['下次再贴吧，现在有点忙', '等会儿补给你，说话算数'];
+const CUDDLE_REPLIES = ['嗯……蹭到了。暖暖的，很喜欢。', '（手被握住了）就这样待一会儿。'];
 // #1422：取一句该组现存的预设语。返回空串＝用户把这一组逐句关掉/整组停用（＝真停用），
 //   调用方必须「什么都不说」，不许回落兜底句、更不许抓别的组顶上。
 function presetReplyPick(group, fallback) {

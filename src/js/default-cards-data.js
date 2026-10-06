@@ -220,7 +220,7 @@ window.DEFAULT_CARD_DATA.music = [
 // 供系统/自定义聊天字卡全部不可用时的最后兜底；这里的入池遵循正常默认字卡开关与概率。
 if (window.DEFAULT_CARD_DATA && Array.isArray(window.DEFAULT_CARD_DATA.main) &&
     !window.DEFAULT_CARD_DATA.main.some(function (g) { return g && g[0] === '兜底通用语'; })) {
-  window.DEFAULT_CARD_DATA.main.push(['兜底通用语', ['知道了', '好', '明白了', '我试试', '努力中']]);
+  window.DEFAULT_CARD_DATA.main.push(['兜底通用语', ['知道了']]);
 }
 // v3.28.x #298 词典拼字——系统预设字卡新增「词典」大分类（字卡库→系统预设字卡→词典 tab
 // 可查看/逐张开关，dc-off-dict:* 联动）。两个分组：
@@ -243,9 +243,9 @@ window.DEFAULT_CARD_DATA.dict = [
 // ⚠ 句子必须与迁出前逐字一致（作者要的是原来那些话，不是改写）。一处已知重叠：
 //   「嗯嗯，说得对」同时在「朋友圈·TA的点评」与「朋友圈·TA的回复」——开关按文案存，关一次两组都关
 //   （与站内所有 dc-off-* 同构，不是本批新语义）。
-window.DEFAULT_CARD_DATA.interact.push(["贴贴·回应",["嗯……蹭到了。暖暖的，很喜欢。","那我要贴很久哦，不许偷偷跑掉。","（手被握住了）就这样待一会儿。","你在旁边。很安心。"]]);
+window.DEFAULT_CARD_DATA.interact.push(["贴贴·回应",["嗯……蹭到了。暖暖的，很喜欢。","（手被握住了）就这样待一会儿。"]]);
 window.DEFAULT_CARD_DATA.interact.push(["贴贴·婉拒",["下次再贴吧，现在有点忙","等会儿补给你，说话算数"]]);
 window.DEFAULT_CARD_DATA.interact.push(["游戏邀请·婉拒",["下次吧，现在不太想玩","等会儿再陪你玩好不好"]]);
 window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的点评",["我看到了","又在偷偷蛐蛐我？","我记住了","我也是这么想的"]]);
-window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的回复",["好呀","那你呢？","你说得对","跟你分享过的","被你发现了","我也这么觉得"]]);
+window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的回复",["好","被你发现了"]]);
 window.DEFAULT_CARD_DATA.interact.push(["我发出的邀请",["想和你猜拳，来一局？","想和你玩一局 Pong，来吗？","想和你玩双人贪吃蛇，来吗？","想和你一起听歌"]]);

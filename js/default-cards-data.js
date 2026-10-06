@@ -162,17 +162,17 @@ window.DEFAULT_CARD_DATA.music = [
 ];
 if (window.DEFAULT_CARD_DATA && Array.isArray(window.DEFAULT_CARD_DATA.main) &&
 !window.DEFAULT_CARD_DATA.main.some(function (g) { return g && g[0] === '兜底通用语'; })) {
-window.DEFAULT_CARD_DATA.main.push(['兜底通用语', ['知道了', '好', '明白了', '我试试', '努力中']]);
+window.DEFAULT_CARD_DATA.main.push(['兜底通用语', ['知道了']]);
 }
 window.DEFAULT_CARD_DATA.dict = [
 ["语录",["特别特别想你"]],
 ["词库",["我","你","别人"]]
 ];
-window.DEFAULT_CARD_DATA.interact.push(["贴贴·回应",["嗯……蹭到了。暖暖的，很喜欢。","那我要贴很久哦，不许偷偷跑掉。","（手被握住了）就这样待一会儿。","你在旁边。很安心。"]]);
+window.DEFAULT_CARD_DATA.interact.push(["贴贴·回应",["嗯……蹭到了。暖暖的，很喜欢。","（手被握住了）就这样待一会儿。"]]);
 window.DEFAULT_CARD_DATA.interact.push(["贴贴·婉拒",["下次再贴吧，现在有点忙","等会儿补给你，说话算数"]]);
 window.DEFAULT_CARD_DATA.interact.push(["游戏邀请·婉拒",["下次吧，现在不太想玩","等会儿再陪你玩好不好"]]);
 window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的点评",["我看到了","又在偷偷蛐蛐我？","我记住了","我也是这么想的"]]);
-window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的回复",["好呀","那你呢？","你说得对","跟你分享过的","被你发现了","我也这么觉得"]]);
+window.DEFAULT_CARD_DATA.interact.push(["朋友圈·TA的回复",["好","被你发现了"]]);
 window.DEFAULT_CARD_DATA.interact.push(["我发出的邀请",["想和你玩猜拳，来一局？","想和你玩一局 Pong，来吗？","想和你玩双人贪吃蛇，来吗？","想和你一起听歌"]]);
 if (window.__mochiLoaded) window.__mochiLoaded.push("default-cards-data.js");
 } catch (__e) { if (window.__mochiErrLoaded) window.__mochiErrLoaded.push("default-cards-data.js"); try { console.error("[JS] default-cards-data.js", __e && __e.message || __e); } catch (x) {} if (window.__jsErrors) window.__jsErrors.push("[default-cards-data.js] " + String(__e && __e.message || __e)); } })();

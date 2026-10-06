@@ -6731,9 +6731,9 @@ else asForegroundCatchup();
 document.addEventListener('mochi-fg-resume', asForegroundCatchup); // bg-keep 统一信号：覆盖只发 focus/pageshow 的内核与 bfcache 恢复
 if (typeof document.wasDiscarded !== 'undefined' && document.wasDiscarded === true) setTimeout(asForegroundCatchup, 4000); // 被丢弃后重载＝长离场回场（手动刷新不走这里）
 window.__asCatchupProbe = { fire: asForegroundCatchup, state: function () { return { hiddenAt: asHiddenAt, lastTry: asLastTryAt, catchupAt: asCatchupAt }; } }; // 供 verify 脚本/诊断只读探测
-const INVITE_DECLINE = ['下次吧，现在不太想玩~', '等会儿再陪你玩好不好', '先不玩啦，待会儿再说', '现在没状态，下次一定'];
-const CUDDLE_DECLINE = ['下次再贴吧，先记着这笔~', '等会儿补给你，说话算数', '先欠着，攒到晚上一起还~', '今天想先自己待会儿，明天加倍还你'];
-const CUDDLE_REPLIES = ['嗯……蹭到了。暖暖的，很喜欢。', '那我要贴很久哦，不许偷偷跑掉。', '手被握住了，就这样待一会儿。', '感觉到了，你在旁边。很安心。', '贴贴充电中……好，满格了。'];
+const INVITE_DECLINE = ['下次吧，现在不太想玩', '等会儿再陪你玩好不好'];
+const CUDDLE_DECLINE = ['下次再贴吧，现在有点忙', '等会儿补给你，说话算数'];
+const CUDDLE_REPLIES = ['嗯……蹭到了。暖暖的，很喜欢。', '（手被握住了）就这样待一会儿。'];
 function presetReplyPick(group, fallback) {
 try {
 if (typeof window.getPresetGroupLines === 'function') {
